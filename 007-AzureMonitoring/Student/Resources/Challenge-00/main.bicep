@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 @secure()
-param AdminPassword string
+param AdminPassword string = newGuid()
 var AdminUsername = 'wthadmin'
 var SqlUsername = 'sqladmin'
 param Location string = deployment().location
